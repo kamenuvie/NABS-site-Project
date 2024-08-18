@@ -563,4 +563,272 @@ text-align: center;
   color:#fff
 }
 
+/*......... ABOUT PAGE CSS.........*/
+
+
+.about-section{
+  background-image: url(./site/assets/Images/bck.jpg);
+
+}
+
+.about-section h1{
+  font-size: 3.4rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2.4rem;
+
+
+}
+
+.about-frame{
+  display: flex;
+  justify-content: space-around;
+  gap: 70px;
+  padding: auto;
+  margin-bottom: 20px;
+}
+
+.first-frame{
+  height: 80%;
+  width: 80%;
+  margin-left: 20px;
+}
+
+.first-frame h2 , .first-frame p{
+ color: #fff;
+}
+
+.second-frame{
+  height: 80%;
+  width: 80%;
+  margin-right: 20px;
+}
+.second-frame h2 , .second-frame p{
+  color: #fff;
+ }
+
+.about-img{
+  height: 350px;
+  width: 100%;
+  align-content:center;
+  align-items:center;
+}
+
+
+
+/* .about-bkg{
+  background-image: url(./site/assets/Images/about-us-background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+/*......... NEWS AND EVENT PAGE CSS.........*/
+
+.news-events{
+  background-image: url(./site/assets/Images/bck.jpg);
+  background-position: center;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.news-events h2, .news-events h3{
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding:auto;
+
+}
+
+.announcement-1{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 90px;
+  margin-top: 20px;
+
+}
+
+
+
+.frame-1{
+  width: 70%;
+  height: 30%;
+  background-color:url(./site/assets/Images/bck.jpg);
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color:floralwhite
+}
+
+.ann-speech{
+  width: 60%;
+  height: 100%;
+}
+
+
+.announcement-2{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 90px;
+  margin-top: 20px;
+
+}
+
+.frame-1{
+  width: 70%;
+  height: 30%;
+  background-color:url(./site/assets/Images/bck.jpg);
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color:floralwhite
+}
+
+.inter-house{
+  width: 60%;
+  height: 100%;
+}
+
+.announcement-3{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 90px;
+  margin-top: 20px;
+
+}
+
+.frame-1{
+  width: 70%;
+  height: 30%;
+  background-color:url(./site/assets/Images/bck.jpg);
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color:floralwhite
+}
+
+.graduation{
+  width: 80%;
+  height: 100%;
+}
+
+
+
+/*......... REGISTER PAGE CSS.........*/
+
+.Register-section{
+  background-image: url(./site/assets/Images/bck.jpg);
+  background-position: center;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content:center;
+  margin-bottom: 20px;
+}
+
+.Register-section h1, .Register-section p,  .Register-section h2, .Register-section h3{
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding:auto;
+  margin-left:5%;
+  margin-right:5%
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Form Container */
+.form-section {
+  background-color: url(./site/assets/Images/natural\ brains.jpg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  align-content:center;
+  align-items:center;
+  color:#fff;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Input Fields */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Text Area */
+.text-area {
+  height: 100px;
+  width: 100%;
+}
+
+/* Required Fields */
+input:required {
+  border: 2px solid #402fda; /* Red border for required fields */
+}
+
+/* Select Dropdown */
+.form-control[type="select"] {
+  width: 50%;
+}
+
+/* Focus Styles */
+.form-control:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+/* Submit Button Style */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  justify-content: end;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
 
