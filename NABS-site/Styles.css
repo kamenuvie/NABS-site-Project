@@ -563,4 +563,318 @@ text-align: center;
   color:#fff
 }
 
+/*......... ABOUT PAGE CSS.........*/
 
+
+.about-section{
+  background-image: url(./site/assets/Images/bck.jpg);
+
+}
+
+.about-section h1{
+  font-size: 3.4rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2.4rem;
+
+
+}
+
+.about-frame{
+  display: flex;
+  justify-content: space-around;
+  gap: 70px;
+  padding: auto;
+  margin-bottom: 20px;
+}
+
+.first-frame{
+  height: 80%;
+  width: 80%;
+  margin-left: 20px;
+}
+
+.first-frame h2 , .first-frame p{
+ color: #fff;
+}
+
+.second-frame{
+  height: 80%;
+  width: 80%;
+  margin-right: 20px;
+}
+.second-frame h2 , .second-frame p{
+  color: #fff;
+ }
+
+.about-img{
+  height: 350px;
+  width: 100%;
+  align-content:center;
+  align-items:center;
+}
+
+
+
+/* .about-bkg{
+  background-image: url(./site/assets/Images/about-us-background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+/*......... NEWS AND EVENT PAGE CSS.........*/
+
+.news-events{
+  background-image: url(./site/assets/Images/bck.jpg);
+  background-position: center;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.news-events h2, .news-events h3{
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding:auto;
+
+}
+
+.announcement-1{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 90px;
+  margin-top: 20px;
+
+}
+
+
+
+.frame-1{
+  width: 70%;
+  height: 30%;
+  background-color:url(./site/assets/Images/bck.jpg);
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color:floralwhite
+}
+
+.ann-speech{
+  width: 60%;
+  height: 100%;
+}
+
+
+.announcement-2{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 90px;
+  margin-top: 20px;
+
+}
+
+.frame-1{
+  width: 70%;
+  height: 30%;
+  background-color:url(./site/assets/Images/bck.jpg);
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color:floralwhite
+}
+
+.inter-house{
+  width: 60%;
+  height: 100%;
+}
+
+.announcement-3{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 90px;
+  margin-top: 20px;
+
+}
+
+.frame-1{
+  width: 70%;
+  height: 30%;
+  background-color:url(./site/assets/Images/bck.jpg);
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color:floralwhite
+}
+
+.graduation{
+  width: 80%;
+  height: 100%;
+}
+
+
+
+/*......... REGISTER PAGE CSS.........*/
+
+.Register-section{
+  background-image: url(./site/assets/Images/bck.jpg);
+  background-position: center;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content:center;
+  margin-bottom: 20px;
+}
+
+.Register-section h1, .Register-section p,  .Register-section h2, .Register-section h3{
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding:auto;
+  margin-left:5%;
+  margin-right:5%
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Form Container */
+.form-section {
+  background-color: url(./site/assets/Images/natural\ brains.jpg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  align-content:center;
+  align-items:center;
+  color:#fff;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Input Fields */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Text Area */
+.text-area {
+  height: 100px;
+  width: 100%;
+}
+
+/* Required Fields */
+input:required {
+  border: 2px solid #402fda; /* Red border for required fields */
+}
+
+/* Select Dropdown */
+.form-control[type="select"] {
+  width: 50%;
+}
+
+/* Focus Styles */
+.form-control:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+/* Submit Button Style */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  justify-content: end;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+/*......Gallery Page Css.......*/
+
+section {
+
+  background-image: url(./site/assets/Images/bck.jpg);
+  background-repeat:no-repeat;
+  margin-bottom: 20px
+}
+h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  padding-top: 24px;
+  text-align: center;
+}
+h5 {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+.main_frame, .main-frame-ln2 {
+  display: flex;
+  grid-template-columns: (auto-fill, minmax(300px, 1fr));
+  grid-gap: 4%;
+  justify-items: space-around;
+  margin-bottom: 30px;
+}
+.main-frame-ln2 {
+  margin-top: 40px;
+}
+.gallery-item1, .gallery-item2, .gallery-item3, .gallery-item4, .gallery-item5, .gallery-item6 {
+  width: 20%;
+  height: 300px;
+  border-radius: 5%;
+}
+.gallery-item1 { background-color: #336699; margin-left: 34px; }
+.gallery-item2 { background-color: #99ccff; }
+.gallery-item3 { background-color: #ccffcc; }
+.gallery-item4 { background-color: #ef9090; }
+.gallery-item5 { background-color: #ffcc99; margin-left: 34px; }
+.gallery-item6 { background-color: #99ccff; }
+.gallery-item1 img, .gallery-item2 img, .gallery-item3 img, .gallery-item4 img, .gallery-item5 img, .gallery-item6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
