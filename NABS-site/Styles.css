@@ -831,4 +831,50 @@ button:hover {
 }
 
 
+/*......Gallery Page Css.......*/
 
+section {
+
+  background-image: url(./site/assets/Images/bck.jpg);
+  background-repeat:no-repeat;
+  margin-bottom: 20px
+}
+h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  padding-top: 24px;
+  text-align: center;
+}
+h5 {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+.main_frame, .main-frame-ln2 {
+  display: flex;
+  grid-template-columns: (auto-fill, minmax(300px, 1fr));
+  grid-gap: 4%;
+  justify-items: space-around;
+  margin-bottom: 30px;
+}
+.main-frame-ln2 {
+  margin-top: 40px;
+}
+.gallery-item1, .gallery-item2, .gallery-item3, .gallery-item4, .gallery-item5, .gallery-item6 {
+  width: 20%;
+  height: 300px;
+  border-radius: 5%;
+}
+.gallery-item1 { background-color: #336699; margin-left: 34px; }
+.gallery-item2 { background-color: #99ccff; }
+.gallery-item3 { background-color: #ccffcc; }
+.gallery-item4 { background-color: #ef9090; }
+.gallery-item5 { background-color: #ffcc99; margin-left: 34px; }
+.gallery-item6 { background-color: #99ccff; }
+.gallery-item1 img, .gallery-item2 img, .gallery-item3 img, .gallery-item4 img, .gallery-item5 img, .gallery-item6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

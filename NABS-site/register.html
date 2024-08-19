@@ -38,7 +38,7 @@
    <h3> Natural Brains Academy Pick up Form</h3>
    <p> Please fill out this form carefully and ensure all required fields are completed.</p> <br>
    <div class="form-section">
-    <form action="">
+    <form id="admission-form" action="forms.php" action="POST">
       <div class="form-group">
         <label for="name">Full Name *</label>
         <input type="text" class="form-control" id="name" required>
@@ -92,6 +92,31 @@
 
    </div>
  </section>
+ <script>
+  document.getElementById('admission-form').addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData.entries());
+      try {
+          const response = await fetch('http://localhost:3000/admission', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
+          });
+          if (response.ok) {
+              alert('Application submitted successfully!');
+          } else {
+              alert('Error submitting application.');
+          }
+      } catch (error) {
+          alert('An error occurred while submitting the application.');
+          console.error('Error:', error);
+      }
+  });
+</script>
+
 
 
  <footer>
@@ -131,3 +156,40 @@
 </body>
 </html>
 
+
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $dob = htmlspecialchars($_POST['dob']);
+    $gender = htmlspecialchars($_POST['gender']);
+    $health_status = htmlspecialchars($_POST['health_status']);
+    $parent_name = htmlspecialchars($_POST['parent_name']);
+    $parent_email = htmlspecialchars($_POST['parent_email']);
+    $parent_phone = htmlspecialchars($_POST['parent_phone']);
+
+    $to = "your-email@example.com";  // Replace with your email address
+    $subject = "New Form Submission from $name";
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
+
+    $message = "Full Name: $name\n";
+    $message .= "Email Address: $email\n";
+    $message .= "Phone Number: $phone\n";
+    $message .= "Date of Birth: $dob\n";
+    $message .= "Gender: $gender\n";
+    $message .= "Health Status: $health_status\n";
+    $message .= "Parent's Full Name: $parent_name\n";
+    $message .= "Parent's Email Address: $parent_email\n";
+    $message .= "Parent's Phone Number: $parent_phone\n";
+
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Email sent successfully!";
+    } else {
+        echo "Failed to send email.";
+    }
+}
+?>
